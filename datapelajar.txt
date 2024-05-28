@@ -1,4 +1,0 @@
-P010, Salma, K01, 2344
-P011, Hafiz, K01, 3337
-P012, Damian, K02, 5546
-P013, Elya, K02, 2222
