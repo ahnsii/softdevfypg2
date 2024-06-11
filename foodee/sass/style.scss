@@ -354,6 +354,10 @@ p {
 .fh5co-main-nav {
 	position: relative;
 	background: $brand-white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
 	&.fh5co-shadow {
 		-webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
 		-moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
@@ -382,6 +386,11 @@ p {
 		vertical-align: middle;
 		float: left;
 		line-height: 0;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        
 		a {
 			padding: 35px 10px;
 			color: #130d08;
@@ -417,8 +426,9 @@ p {
 		}
 	}
 	.fh5co-menu-2 {
-		text-align: left;
+		text-align: right;
 		width: 40.33%;
+        margin-left: auto;
 	}
 
 	

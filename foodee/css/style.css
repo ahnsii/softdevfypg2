@@ -321,7 +321,7 @@ p {
 .fh5co-main-nav .fh5co-menu-1 a.active,
 .fh5co-main-nav .fh5co-menu-2 a.active,
 .fh5co-main-nav .fh5co-logo a.active {
-  color: #fb6e14;
+  color: #CD0A15;
 }
 .fh5co-main-nav .fh5co-menu-1 {
   text-align: right;
@@ -1352,6 +1352,15 @@ p {
 
 .row-padded {
   padding-bottom: 40px;
+}
+
+.header-logo{
+    position: left;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /*top: 8px;
+    left: 16px;*/
 }
 
 /*# sourceMappingURL=style.css.map */

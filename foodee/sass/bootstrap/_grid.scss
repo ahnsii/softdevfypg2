@@ -28,7 +28,11 @@
 // width for fluid, full width layouts.
 
 .container-fluid {
-  @include container-fixed;
+    @include container-fixed;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;*/
 }
 
 
