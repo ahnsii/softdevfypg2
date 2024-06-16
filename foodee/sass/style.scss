@@ -8,7 +8,7 @@ $padding-base-vertical: 14px !default;
 // $brand-primary: #52d3aa !default;
 // $brand-secondary: #3f95ea !default; 
 
-$brand-primary: 			#fb6e14 !default;
+$brand-primary: 		#cd0a15 !default;
 $brand-success:         #58ca7e !default;
 $brand-info:            #1784fb !default;
 $brand-warning:         #fed330 !default;
@@ -447,7 +447,7 @@ p {
 			width: 40px;
 			height: 2px;
 			left: 50%;
-			background: #fb6e14;
+			background: #cd0a15;
 			margin-left: -20px;
 		}
 	}
@@ -559,6 +559,9 @@ p {
 							font-size: 20px;
 							line-height: 1.5;
 						}
+                        
+
+                        
 						&.quote-author {
 							font-size: 20px;
 							color: lighten($brand-black, 50%);

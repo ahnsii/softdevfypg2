@@ -9,8 +9,8 @@ body {
   font-family: "Merriweather", serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 2;
-  color: #5e493a;
+  line-height: 2; 
+  color: #ffdd99;;
 }
 body.fh5co-overflow {
   overflow-x: auto;
@@ -367,7 +367,7 @@ p {
   width: 40px;
   height: 2px;
   left: 50%;
-  background: #fb6e14;
+  background: #cd0a15;
   margin-left: -20px;
 }
 .fh5co-heading .sub-heading {
@@ -960,7 +960,7 @@ p {
 }
 #fh5co-events .fh5co-event .fh5co-event-meta:after, #fh5co-events .fh5co-event .fh5co-event-meta::after {
   background: #bfbfbf;
-  background: #fb6e14;
+  background: #cd0a15;
   content: "";
   position: absolute;
   left: 50%;
@@ -1370,4 +1370,5 @@ p {
     /*top: 8px;
     left: 16px;*/
 }
+
 /*# sourceMappingURL=style.css.map */
