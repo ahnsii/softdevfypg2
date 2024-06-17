@@ -1366,8 +1366,8 @@ p {
     position: right;
     display: flex;
     align-items: center;
-/*    margin-left: 420px;*/
-    margin-right: 100px;
+    margin-left: 430px;
+/*    margin-right: 100px;*/
     /*top: 8px;
     left: 16px;*/
 }
@@ -1376,7 +1376,7 @@ p {
     position: right;
     display: flex;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 340px;
     /*top: 8px;
     left: 16px;*/
 }
