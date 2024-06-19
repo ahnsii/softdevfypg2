@@ -10,20 +10,20 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 2; 
-  color: #ffdd99;;
+  color: #7a060c;;
 }
 body.fh5co-overflow {
   overflow-x: auto;
 }
 
 a {
-  color: #fb6e14;
+  color: #cd0a15;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #bf4c03;
+  color: #92070e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,21 +63,21 @@ p {
 }
 
 .btn-primary {
-  background: #fb6e14;
+  background: #cd0a15;
   color: #fff;
-  border: 2px solid #fb6e14;
+  border: 2px solid #cd0a15;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f16104 !important;
-  border-color: #f16104 !important;
+  background: #cd0a15 !important;
+  border-color: #cd0a15 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #fb6e14;
-  border: 2px solid #fb6e14;
+  color: #cd0a15;
+  border: 2px solid #cd0a15;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #fb6e14;
+  background: #cd0a15;
   color: #fff;
 }
 
@@ -325,7 +325,7 @@ p {
 }
 .fh5co-main-nav .fh5co-menu-1 {
   text-align: right;
-  width: 100.33%;
+  width: 120.33%;
 }
 .fh5co-main-nav .fh5co-menu-1 a {
   vertical-align: middle;
@@ -345,7 +345,7 @@ p {
 }
 .fh5co-main-nav .fh5co-menu-2 {
   text-align: left;
-  width: 100.33%;
+  width: 120.33%;
 }
 
 .fh5co-heading .heading {
@@ -430,7 +430,7 @@ p {
   width: 40px;
   height: 2px;
   left: 50%;
-  background: #fb6e14;
+  background: #cd0a15;
   margin-left: -20px;
 }
 #fh5co-about .fh5co-text p {
@@ -919,7 +919,7 @@ p {
   margin-left: -24px;
 }
 #fh5co-events .fh5co-heading .sub-heading {
-  color: #a99c92;
+  color: #72645a;
 }
 @media screen and (max-width: 768px) {
   #fh5co-events {
@@ -1366,7 +1366,17 @@ p {
     position: right;
     display: flex;
     align-items: center;
-    margin-left: 600px;
+    margin-left: 430px;
+/*    margin-right: 100px;*/
+    /*top: 8px;
+    left: 16px;*/
+}
+
+.user-icon-2{
+    position: right;
+    display: flex;
+    align-items: center;
+    margin-left: 340px;
     /*top: 8px;
     left: 16px;*/
 }

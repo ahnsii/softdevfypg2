@@ -837,13 +837,15 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 2px;
 	@include transition(.3s);
 	&.btn-primary {
-		background: $brand-primary;
+//		background: $brand-primary;
+        background: #cd0a15;
 		color: $brand-white;
 		border: none!important;
 		border: 2px solid transparent!important;
 		&:hover, &:active, &:focus {
 			box-shadow: none;
-			background: $brand-primary;
+//			background: $brand-primary;
+            background: #cd0a15;
 		}
 	}
 	&:hover, &:active, &:focus {
