@@ -503,23 +503,23 @@
 				</div>
 				<div class="row">
 					
-						<h3>Feedback Form</h3>
-						<div class="form-group ">
-							<label for="name" class="sr-only">Name</label>
-							<input id="name" class="form-control" placeholder="Name" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
-						</div>
-						
-						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group ">
-							<input class="btn btn-primary" value="Send Message" type="submit">
-						</div>
+				<form id="feedbackForm" action="submit_feedback.php" method="post">
+    <div class="form-group">
+        <label for="Name" class="sr-only">Name</label>
+        <input id="Name" name="Name" class="form-control" placeholder="Name" type="text" required>
+    </div>
+    <div class="form-group">
+        <label for="Email" class="sr-only">Email</label>
+        <input id="Email" name="Email" class="form-control" placeholder="Email" type="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message" class="sr-only">feedback</label>
+        <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary" value="Send Message" type="submit">
+    </div>
+</form>
 				</div>
 			</div>
 		</div>
