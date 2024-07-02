@@ -18,7 +18,7 @@ body {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: linear-gradient(45deg, #cd0a15, #ffffc9);
+    background: linear-gradient(to bottom right,red,pink);
     overflow-x: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -69,14 +69,14 @@ body {
     width: calc(100% - 300px);
     min-height: 100vh;
     left: 300px;
-    background: #f5f5f5;
+    background:  pink;
 }
 
 .top-bar {
     position: fixed;
     height: 60px;
     width: calc(100% - 300px);
-    background: #fff;
+    background: pink);
     display: grid;
     grid-template-columns: 10fr 0.4fr 1fr;
     grid-gap: 5px;
@@ -179,10 +179,11 @@ img {
 .last-appointments,
 .doctor-visiting {
     min-height: 350px;
-    background: #fff;
+    background: linear-gradient( to bottom right,pink,red);
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 8px 0px red;
 }
+
 
 .heading {
     display: flex;
@@ -300,3 +301,37 @@ td i {
     }
 }
 
+
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
