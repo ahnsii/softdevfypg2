@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:4306:4306
--- Generation Time: Jun 25, 2024 at 05:59 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Jul 02, 2024 at 11:47 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,6 +35,13 @@ CREATE TABLE `admininfo` (
   `Password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `admininfo`
+--
+
+INSERT INTO `admininfo` (`ID`, `Name`, `Email`, `Phone_Number`, `Password`) VALUES
+(1, 'sukiya', 'sukiyaAdmin123@gmail.com', '0116400392', 'sukiya123');
+
 -- --------------------------------------------------------
 
 --
@@ -46,17 +53,20 @@ CREATE TABLE `custinfo` (
   `name` varchar(100) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `phone_number` varchar(20) DEFAULT NULL,
-  `password` char(50) DEFAULT NULL
+  `password` char(50) DEFAULT NULL,
+  `is_admin` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `custinfo`
 --
 
-INSERT INTO `custinfo` (`id`, `name`, `email`, `phone_number`, `password`) VALUES
-(1, 'Muhammad Qayyum', 'qayyyumm11@gmail.com', '12345678', 'abc'),
-(2, 'adam', 'fairusamar@gmail.com', '14141414', 'adam'),
-(3, 'adam arif', 'fairusamardaaa@gmail.com', '19471290', 'aaa');
+INSERT INTO `custinfo` (`id`, `name`, `email`, `phone_number`, `password`, `is_admin`) VALUES
+(1, 'Muhammad Qayyum', 'qayyyumm11@gmail.com', '12345678', 'abc', 0),
+(2, 'adam', 'fairusamar@gmail.com', '14141414', 'adam', 0),
+(3, 'adam arif', 'fairusamardaaa@gmail.com', '19471290', 'aaa', 0),
+(5, 'darwish', 'darwish@gmail.com', '01164003924', 'pass1234', 0),
+(6, 'sukiya', 'sukiyaAdmin@gmail.com', '01121003738', 'sukiya', 1);
 
 -- --------------------------------------------------------
 
@@ -70,6 +80,16 @@ CREATE TABLE `feedback` (
   `Email` varchar(255) NOT NULL,
   `Feedback` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`ID`, `Name`, `Email`, `Feedback`) VALUES
+(1, 'qayyum', 'qayyyumm11@gmail.com', 'halo'),
+(2, 'qayyum', 'qayyyumm11@gmail.com', 'tst'),
+(3, 'a', 'a@gmail.com', 'a'),
+(4, 'wish', 'wish@gmail.com', 'i want more meat ;)');
 
 --
 -- Indexes for dumped tables
@@ -101,19 +121,19 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `admininfo`
 --
 ALTER TABLE `admininfo`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `custinfo`
 --
 ALTER TABLE `custinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

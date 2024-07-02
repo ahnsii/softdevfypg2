@@ -1,5 +1,6 @@
 <?php
-require 'connect.php';
+require 'connect.php'; // Make sure this file correctly connects to your database
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -7,17 +8,23 @@ if (session_status() == PHP_SESSION_NONE) {
 if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $result = mysqli_query($conn, "SELECT * FROM custInfo WHERE email = '$email'");
-    $row = mysqli_fetch_assoc($result);
 
-    if (mysqli_num_rows($result) > 0) {
-        $stored_password = $row["password"];
+    // Check in custinfo table
+    $custResult = mysqli_query($conn, "SELECT * FROM custinfo WHERE email = '$email'");
+    if ($custResult && mysqli_num_rows($custResult) > 0) {
+        $custRow = mysqli_fetch_assoc($custResult);
+        $stored_password = $custRow["password"];
 
-        // Verify the password (without hashing)
         if ($password == $stored_password) {
             $_SESSION["login"] = true;
-            $_SESSION["id"] = $row["id"];
-            header("Location: home_cust.php"); // Change this to the page you want to redirect to after login
+            $_SESSION["id"] = $custRow["id"];
+            $_SESSION["is_admin"] = $custRow["is_admin"];
+
+            if ($custRow["is_admin"]) {
+                header("Location: dashboard.php");
+            } else {
+                header("Location: home_cust.php");
+            }
             exit();
         } else {
             echo "<script>alert('Wrong Password');</script>";
@@ -28,13 +35,12 @@ if (isset($_POST["submit"])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glassmorphism Login Form | CodingNepal</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -64,6 +70,5 @@ if (isset($_POST["submit"])) {
         </div>
     </form>
 </div>
-
 </body>
 </html>

@@ -43,8 +43,11 @@ if (isset($_POST["submit"])) {
                 if ($update_result) {
                     // Unset reset_email session variable
                     unset($_SESSION["reset_email"]);
-                    // Redirect to login page or another appropriate page
-                    header("Location: index.php");
+                    // Show success alert and redirect to login page
+                    echo "<script>
+                            alert('Password successfully changed');
+                            window.location.href='index.php';
+                          </script>";
                     exit();
                 } else {
                     $errors[] = "Error updating password. Please try again later.";
@@ -56,6 +59,7 @@ if (isset($_POST["submit"])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
