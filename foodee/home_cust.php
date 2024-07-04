@@ -1,3 +1,14 @@
+<?php
+require 'connect.php';
+
+session_start(); // Start the session
+
+// Check if the user is logged in, if not then redirect them to the login page
+if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
+    header("location: index.php");
+    exit;
+}
+?>
 
 
 <!DOCTYPE html>
@@ -105,7 +116,7 @@
 						<a href="#" data-nav-section="bookslot">Book Slot</a>
 						<a href="#" data-nav-section="feedbackform">Feedback Form</a>
                         <a href="#" data-nav-section="events">Contact Us</a>
-                        <a href="#">Customer Name</a>
+                        <a href="#"><?php echo $_SESSION["name"]; ?></a>
                         <div class="user-icon-2" onclick="window.location.href='index.php';">
                             <img src="images/login.png" width="35px" style="border: none;"/>
                         </div>

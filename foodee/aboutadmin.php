@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -49,21 +49,21 @@
                 </li>
                 <li>
                     <a href="adminfeedbck.php">
-
+<!--                    <section id="#fh5co-contact"></section>-->
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
-                    <a href="aboutadmin.php">
-
+                    <a href="default.php#fh5co-about">
+<!--                    <section id="#fh5co-about"></section>-->
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
                     <a href="contactadmin.php">
-
+<!--                    <section id="#fh5co-events"></section>-->
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
@@ -82,6 +82,10 @@
                 <div class="search">
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user">
+                    <img src="doctor1.png" alt="">
                 </div>
             </div>
             <div class="cards">
@@ -123,41 +127,27 @@
                 </div>
             </div>
             <div class="tables">
-                <div class="last-appointments">
-                    <div class="heading">
-                        <h2>Admin Profile</h2>
-                        <a href="editprofadmin.php" class="btn">Edit Profile</a>
-
-                    </div>
-                      <table>
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>:</td>
-                            <td>sukiya</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>sukiyaAdmin@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Number Phone</td>
-                            <td>:</td>
-                            <td>01121003738</td>
-                        </tr>
-                        
-      
-
-                        
-                                           </tbody>
-                </table>
-
-                </div>
+             
                 
+                 <div class="doctor-visiting">
+                    <div class="heading">
+                        <h2>About Us</h2>
+                       
+                    </div>
+                    <table class="visiting">
+                        
+                        <tbody>
+                           <p>The conceptualization of Suki-Ya was born from the combination of specialized shops in Japan serving hot pot, shabu-shabu and sukiyaki. In order to adopt and share the exclusive dining experience, we gathered technology and expertise from Japan and fuse them together. We wanted to share our idea of a modern healthy lifestyle eatery where people can get together to experience healthy, low fat food in a warm atmosphere.
+
+At Suki-Ya, we offer 4 choices of popular soup bases to further entice the diner's pallete with the FREE FLOW of freshly sliced meat. Fans of sukiyaki will certainly love our paper thin sliced beef. To complement the rich selection of meat, our healthy vegetable bar is always stocked with fresh greens and premium pasteurised eggs. We have specially made dipping sauce available or you can always create your own favourite sauce. We also have an a-la carte menu with choices ranging from tofu to the ever popular salmon sashimi.</p>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     
-        </div></div>
+    
 </body>
 
 </html>

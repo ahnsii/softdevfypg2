@@ -1,18 +1,22 @@
+<?php
+require 'connect.php';
+session_start();
+
+// Fetch feedback data from the database
+$query = "SELECT id, name, email, feedback FROM feedback";
+$result = mysqli_query($conn, $query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
     <link rel="stylesheet" href="admin.styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <title>Admin panel</title>
 </head>
-
 <body>
     <div class="container">
         <div class="sidebar">
@@ -24,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -48,27 +52,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="adminfeedbck.php">
-
+                    <a href="default.php#fh5co-contact">
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
                     <a href="aboutadmin.php">
-
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
                     <a href="contactadmin.php">
-
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
                 </li>
-                 <li>
+                <li>
                     <a href="index.php">
                         <i class="fas fa-sign-out-alt"></i>
                         <div class="title">Sign Out</div>
@@ -82,6 +83,10 @@
                 <div class="search">
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user">
+                    <img src="doctor1.png" alt="">
                 </div>
             </div>
             <div class="cards">
@@ -125,39 +130,36 @@
             <div class="tables">
                 <div class="last-appointments">
                     <div class="heading">
-                        <h2>Admin Profile</h2>
-                        <a href="editprofadmin.php" class="btn">Edit Profile</a>
-
+                        <h2>Feedback</h2>
+                        <a href="#" class="btn">View All</a>
                     </div>
-                      <table>
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>:</td>
-                            <td>sukiya</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>sukiyaAdmin@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Number Phone</td>
-                            <td>:</td>
-                            <td>01121003738</td>
-                        </tr>
-                        
-      
-
-                        
-                                           </tbody>
-                </table>
-
+                    <table class="appointments">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Feedback</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            if ($result && mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo "<tr>";
+                                    echo "<td>" . htmlspecialchars($row['name']) . "</td>";
+                                    echo "<td>" . htmlspecialchars($row['email']) . "</td>";
+                                    echo "<td>" . htmlspecialchars($row['feedback']) . "</td>";
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='3'>No feedback available</td></tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
                 </div>
-                
+            </div>
+        </div>
     </div>
-    
-        </div></div>
 </body>
-
 </html>

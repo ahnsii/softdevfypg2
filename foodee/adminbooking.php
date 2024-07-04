@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--    <link rel="author" href="default.html">-->
     
     <link rel="stylesheet" href="admin.styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="adminbooking.php">
+                    <a href="#">
                         <i class="fas fa-table"></i>
                         <div class="title">Bookings</div>
                     </a>
@@ -49,21 +49,21 @@
                 </li>
                 <li>
                     <a href="adminfeedbck.php">
-
+<!--                    <section id="#fh5co-contact"></section>-->
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
                     <a href="aboutadmin.php">
-
+<!--                    <section id="#fh5co-about"></section>-->
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
                     <a href="contactadmin.php">
-
+<!--                    <section id="#fh5co-events"></section>-->
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
@@ -82,6 +82,10 @@
                 <div class="search">
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user">
+                    <img src="doctor1.png" alt="">
                 </div>
             </div>
             <div class="cards">
@@ -123,41 +127,36 @@
                 </div>
             </div>
             <div class="tables">
-                <div class="last-appointments">
+                
+                <div class="doctor-visiting">
                     <div class="heading">
-                        <h2>Admin Profile</h2>
-                        <a href="editprofadmin.php" class="btn">Edit Profile</a>
-
+                        <h2>Bookings</h2>
+                        <a href="#" class="btn">View All</a>
                     </div>
-                      <table>
-                    <tbody>
-                        <tr>
+                    <table class="visiting">
+                        <thead>
+                            <td>Table No.</td>
                             <td>Name</td>
-                            <td>:</td>
-                            <td>sukiya</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>sukiyaAdmin@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Number Phone</td>
-                            <td>:</td>
-                            <td>01121003738</td>
-                        </tr>
-                        
-      
-
-                        
-                                           </tbody>
-                </table>
-
+                            <td>Visit time</td>
+                            <td>Detail</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1
+                                </td>
+                                <td>Benjamin</td>
+                                <td>14:00</td>
+                                <td><i class="far fa-eye"></i></td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
                 </div>
                 
-    </div>
+                
+            </div></div></div>
     
-        </div></div>
+    
 </body>
 
 </html>

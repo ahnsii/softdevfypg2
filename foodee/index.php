@@ -19,6 +19,7 @@ if (isset($_POST["submit"])) {
             $_SESSION["login"] = true;
             $_SESSION["id"] = $custRow["id"];
             $_SESSION["is_admin"] = $custRow["is_admin"];
+            $_SESSION["name"] = $custRow["name"]; // Store the user's name in session
 
             if ($custRow["is_admin"]) {
                 header("Location: dashboard.php");
