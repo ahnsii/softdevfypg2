@@ -58,7 +58,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<link rel="stylesheet" href="css/style.css">
-
+	
+	<link rel="stylesheet" href="dropdown2.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -106,9 +107,21 @@
 						<a href="#" data-nav-section="feedbackform">Feedback Form</a>
                         <a href="#" data-nav-section="events">Contact Us</a>
                         <a href="#">Customer Name</a>
+<!--
                         <div class="user-icon-2" onclick="window.location.href='login.html';">
                             <img src="images/login.png" width="35px" style="border: none;"/>
                         </div>
+-->
+                        <div class="dropdown2">
+                          <button onclick="myFunction()" class="dropbtn2">My Account</button>
+                          <div id="myDropdown" class="dropdown-content2">
+                            <a href="#home">Profile</a> 
+                            <a href="#about">Booking History</a>
+                            <a href="#contact">Sign Out</a>
+                          </div>
+                        </div>
+                        <script src="dropdown2.js"></script>
+
 					</div>
 					<!--<div class="fh5co-menu-2">
 						<a href="#" data-nav-section="reservation">Feedback Form</a>

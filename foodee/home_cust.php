@@ -70,6 +70,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 
 	<link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="dropdown2.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -112,20 +113,33 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
                         <div class="header-logo"><img src= "images/Pics%202.png"  width="125px">
 						<a href="#" data-nav-section="about">About</a>
                         <a href="#" data-nav-section="menu">Menu</a>
-						<a href="#" data-nav-section="pickuporder">Pickup Order</a>
 						<a href="#" data-nav-section="bookslot">Book Slot</a>
+						<a href="#" data-nav-section="pickuporder">Pickup Order</a>
 						<a href="#" data-nav-section="feedbackform">Feedback Form</a>
                         <a href="#" data-nav-section="events">Contact Us</a>
                         <a href="#"><?php echo $_SESSION["name"]; ?></a>
+<!--
                         <div class="user-icon-2" onclick="window.location.href='index.php';">
                             <img src="images/login.png" width="35px" style="border: none;"/>
                         </div>
-					</div>
+-->
+                        <div class="dropdown2">
+                          <button onclick="myFunction()" class="dropbtn2">My Account</button>
+                          <div id="myDropdown" class="dropdown-content2">
+                            <a href="cust_profile.html" target="_blank">Profile</a> 
+                            <a href="cust_profile.html">Booking History</a>
+                            <a href="#contact">Sign Out</a>
+                          </div>
+                        </div>
+                        <script src="dropdown2.js"></script>
+					    </div>
+					    
+					    
 					<!--<div class="fh5co-menu-2">
 						<a href="#" data-nav-section="reservation">Feedback Form</a>
                         <a href="#" data-nav-section="events">Contact Us</a>
 					</div>-->
-				</div>
+				    </div>
 				
 			</div>
 		</div>
@@ -450,26 +464,25 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 			</div>
 		</div>
 
-		<div id="fh5co-featured" data-section="pickuporder">
+		<div id="fh5co-featured" data-section="bookslot">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Pickup Order</h2>
-						<p class="sub-heading to-animate">Visit our Menu page and choose what you want to include in your Pickup Order.</p>
-							<a href="#" class="btn btn-primary">Proceed to Pickup Order</a>  
+						<h2 class="heading to-animate">Book Slot</h2>
+						<p class="sub-heading to-animate">Sign In to your account now to book a dine-in slot at Suki-Ya @ Setapak Central!</p>
+                        <a href="index.php" class="btn btn-primary">Sign In</a> 
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="fh5co-type" data-section="bookslot" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="fh5co-overlay"></div>
+		<div id="fh5co-type" data-section="pickuporder" style="background-image: url(images/slide_3.jpg);" data-stellar-background-ratio="0.5">
+<!--			<div class="fh5co-overlay"></div>-->
 			<div class="container">
 			    <div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Book Slot</h2>
-						<p class="sub-heading to-animate">Sign In to your account now to book a dine-in slot at Suki-Ya @ Setapak Central.</p>
-							<a href="C:\Users\User\OneDrive\Desktop\a_SOFT DEV FYP G02\softdevfypg2\forms\index.html" class="btn btn-primary">Sign In Now!</a>  
+						<h2 class="heading to-animate">Pickup Order</h2>
+						<p class="sub-heading to-animate">Coming Soon!</p> 
 					</div>
 				</div>
 			
@@ -510,7 +523,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
 						<h2 class="heading to-animate">Feedback Form</h2>
-						<p class="sub-heading to-animate">Please leave good feedbacks only thank you. Bad ones will be deleted. We'll hunt you.</p>
+						<p class="sub-heading to-animate">Welcome to our Feedback Form - your input helps us improve and deliver the best possible service.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -545,7 +558,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2 to-animate">
 						<h2 class="heading">Contact Us</h2>
-						<p class="sub-heading">Our contact info. But don't contact us tho thanx.</p>
+						<p class="sub-heading">Questions about our menu or services? Contact us for assistance.</p>
 					</div>
 				</div>
 <!--				<div class="col-md-6 to-animate-2">-->
@@ -573,17 +586,16 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
                     <br><br><br><br><br><br>
-					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
-					</p>
+					<p class="to-animate">&copy; 2024 Suki-Ya Booking System. <br> Designed by DCS 6 - 22/24 <br> SBS, Group 02. </p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<ul class="fh5co-social">
-						<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+						<li class="to-animate-2"><a href="https://www.facebook.com/sukiyakl/" target="_blank"><i class="icon-facebook"></i></a></li>
+						<li class="to-animate-2"><a href="https://www.tiktok.com/@sukiyamalaysia" target="_blank"><i class="icon-twitter"></i></a></li>
+						<li class="to-animate-2"><a href="https://www.instagram.com/suki.ya_malaysia/" target="_blank"><i class="icon-instagram"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -618,7 +630,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 	</script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-
+        </div>
 	</body>
 </html>
 
