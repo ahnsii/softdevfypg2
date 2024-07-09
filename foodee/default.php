@@ -100,7 +100,7 @@
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<div class="fh5co-menu-1">
-                        <div class="header-logo"><img src= "images/Pics%202.png"  width="125px">
+                        <div class="header-logo"><img src= "images/Pics%202.png"  width="125px" onclick="window.location.href='default.php';">
 						<a href="#" data-nav-section="about">About</a>
                         <a href="#" data-nav-section="menu">Menu</a>
 						<a href="#" data-nav-section="bookslot">Book Slot</a>
@@ -186,37 +186,49 @@
 				</div>
 				<div class="container">
         
-        <h3 class="title"> Suki-Ya Menu </h3>
+<!--        <h3 class="title"> Suki-Ya Menu </h3>-->
         
         <div class="products-container">
             
             <div class="product" data-name=p-1>
                 <img src="shabushabu.jpg" alt="">
-                <h3>Soup</h3>
-                <div class="price">oooo</div>
+                <h3>Shabu-shabu</h3>
+                <div class="price">しゃぶしゃぶ</div>
             </div>
             
             <div class="product" data-name=p-2>
                 <img src="suki.jpg" alt="">
-                <h3>Soup</h3>
-                <div class="price">oooo</div>
+                <h3>Sukiyaki</h3>
+                <div class="price">すき焼き</div>
             </div>
             
             <div class="product" data-name=p-3>
                 <img src="miso.jpg" alt="">
-                <h3>Soup</h3>
-                <div class="price">oooo</div>
+                <h3>Miso Soup</h3>
+                <div class="price">味噌</div>
             </div>
             
             <div class="product" data-name=p-4>
                 <img src="kimu.jpg" alt="">
-                <h3>Soup</h3>
-                <div class="price">oooo</div>
+                <h3>Kimuchi</h3>
+                <div class="price">キムチ</div>
             </div>
             
+            <div class="product" data-name=p-5>
+                <img src="gfx_healthybar.jpg" alt="">
+                <h3>Healthy Bar with Assorted Veges</h3>
+                <div class="price">Free Flow!</div>
+            </div>
+            
+            <div class="product" data-name=p-6>
+                <img src="meat.jpeg" alt="">
+                <h3>Chicken/Beef/Lamb Meat</h3>
+                <div class="price">Free Flow!</div>
+            </div>
            
             
         </div>
+        <br><br><br>
         <div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
 							<h2 class="fh5co-drinks">Drinks</h2>
@@ -241,7 +253,7 @@
 											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Green Tea(free flow)</h3>
+											<h3>Green Tea (free flow)</h3>
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">

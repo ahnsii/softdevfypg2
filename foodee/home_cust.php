@@ -110,7 +110,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<div class="fh5co-menu-2">
-                        <div class="header-logo"><img src= "images/Pics%202.png"  width="125px">
+                        <div class="header-logo"><img src= "images/Pics%202.png"  width="125px" onclick="window.location.href='home_cust.php';">
 						<a href="#" data-nav-section="about">About</a>
                         <a href="#" data-nav-section="menu">Menu</a>
 						<a href="#" data-nav-section="bookslot">Book Slot</a>
@@ -529,22 +529,22 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 				<div class="row">
 					
 				<form id="feedbackForm" action="submit_feedback.php" method="post">
-    <div class="form-group">
-        <label for="Name" class="sr-only">Name</label>
-        <input id="Name" name="Name" class="form-control" placeholder="Name" type="text" required>
-    </div>
-    <div class="form-group">
-        <label for="Email" class="sr-only">Email</label>
-        <input id="Email" name="Email" class="form-control" placeholder="Email" type="email" required>
-    </div>
-    <div class="form-group">
-        <label for="message" class="sr-only">feedback</label>
-        <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
-    </div>
-    <div class="form-group">
-        <input class="btn btn-primary" value="Send Message" type="submit">
-    </div>
-</form>
+                    <div class="form-group">
+                        <label for="Name" class="sr-only">Name</label>
+                        <input id="Name" name="Name" class="form-control" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="sr-only">Email</label>
+                        <input id="Email" name="Email" class="form-control" placeholder="Email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">feedback</label>
+                        <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" value="Send Message" type="submit">
+                    </div>
+                </form>
 
 				</div>
 			</div>
