@@ -24,6 +24,38 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
+	<script src="dropdown2.js"></script>
+	<style>
+        /* Add some basic styling for the dropdown */
+        .dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content2 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content2 a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -123,13 +155,13 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
                             <img src="images/login.png" width="35px" style="border: none;"/>
                         </div>
 -->
-                        <div class="dropdown2">
-                          <button onclick="myFunction()" class="dropbtn2">My Account</button>
-                          <div id="myDropdown" class="dropdown-content2">
-                            <a href="cust_profile.php" target="_blank">Profile</a> 
-                            <a href="cust_profile.php">Booking History</a>
-                            <a href="logout.php">Sign Out</a>
-                          </div>
+						<div class="dropdown2">
+                            <button onclick="myFunction()" class="dropbtn2">My Account</button>
+                            <div id="myDropdown" class="dropdown-content2">
+                                <a href="cust_profile.php" onclick="window.location.href='cust_profile.php';">Profile</a> 
+                                <a href="cust_profile.php" onclick="window.location.href='cust_profile.php';">Booking History</a>
+                                <a href="logout.php" onclick="window.location.href='logout.php';">Sign Out</a>
+                            </div>
                         </div>
                         <script src="dropdown2.js"></script>
 					    </div>

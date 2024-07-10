@@ -18,6 +18,7 @@ if (isset($_POST["submit"])) {
         if ($password == $stored_password) {
             $_SESSION["login"] = true;
             $_SESSION["id"] = $custRow["id"];
+            $_SESSION["user_email"] = $custRow["email"];
             $_SESSION["is_admin"] = $custRow["is_admin"];
             $_SESSION["name"] = $custRow["name"]; // Store the user's name in session
 
@@ -68,6 +69,7 @@ if (isset($_POST["submit"])) {
         <button type="submit" name="submit">Log In</button>
         <div class="register">
             <p>Don't have an account? <a href="Register.php">Register</a></p>
+            <a href = "default.php">Log in as guest</a>
         </div>
     </form>
 </div>

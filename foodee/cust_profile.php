@@ -1,4 +1,38 @@
+<?php
+session_start();
+include 'connect.php'; // Ensure this file exists in the same directory
+
+// Check if user_email is set in the session
+if (!isset($_SESSION['user_email'])) {
+    die("User not logged in.");
+}
+
+// Fetch user data
+$user_email = $_SESSION['user_email']; // Assuming user_email is stored in session
+
+// Ensure $conn is defined
+if (!isset($conn)) {
+    die("Database connection not established.");
+}
+
+// Check the actual column names in your table
+$query = "SELECT name, email, phone_number FROM custinfo WHERE email = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("s", $user_email);
+$stmt->execute();
+$stmt->bind_result($name, $email, $phone_number);
+$stmt->fetch();
+$stmt->close();
+$conn->close();
+
+// Ensure variables are not null
+$name = $name ?? '';
+$email = $email ?? '';
+$phone = $phone ?? '';
+?>
+
 <!--Cust Profile page-->
+
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -317,12 +351,12 @@
                         <div class="user-avatar">
                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
                         </div>
-                        <h5 class="user-name">Yuki Hayashi</h5>
+                        <h5 class="user-name"><?php echo htmlspecialchars($name); ?></h5>
                     </div>
                     <div class="about">
-                        <a href="CUSTviewprofile.php"><h5>View Profile</h5></a>
+                        <a href="cust_profile.php"><h5>View Profile</h5></a>
                         <hr>
-                        <a href="CUSTeditprofile.php"><h5>Edit Profile</h5></a>
+                        <a href="custeditprofile.php"><h5>Edit Profile</h5></a>
                         <hr>
                         <a href="change_pword.php"><h5>Change Password</h5></a>
                         <hr>
@@ -345,35 +379,24 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
-                        <i class="fa fa-user"></i><label for="fullName">Username</label>
-                        <p>Yuki Hayashi</p>
-                        <input type="text" class="form-control" placeholder="Username">
+                        <i class="fa fa-user"></i><label for="fullName">Name</label>
+                        <p><?php echo htmlspecialchars($name); ?></p>
+                       
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <i class="fa fa-envelope"></i><label for="eMail">Email Address</label>
-                        <p>yukihayashi@gmail.com</p>
+                        <p><?php echo htmlspecialchars($email); ?></p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="form-group">
                         <i class="fa fa-phone"></i><label for="phone">Phone Number</label>
-                        <p>012-34567890</p>
+                        <p><?php echo htmlspecialchars($phone_number); ?></p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="form-group">
-                    <i class="fa fa-birthday-cake"></i><label for="date">Date of Birth</label>
-                       <p>02/10/1999</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="form-group">
-                    <i class="fa fa-venus-mars"></i><label for="website">Gender</label>
-                        <p>Female</p>
-                    </div>
-                </div>
+                
                 
             </div>
                 
@@ -442,7 +465,7 @@
 	</div>
 -->
 
-    <footer>
+   
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row row-padded">
@@ -464,7 +487,7 @@
 			</div>
 		</div>
 	</div>
-	</footer>
+	
 
 
 	
