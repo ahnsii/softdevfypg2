@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2024 at 11:47 AM
+-- Generation Time: Jul 10, 2024 at 08:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,6 +45,32 @@ INSERT INTO `admininfo` (`ID`, `Name`, `Email`, `Phone_Number`, `Password`) VALU
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `custbooking`
+--
+
+CREATE TABLE `custbooking` (
+  `ID` int(11) NOT NULL,
+  `Pax` int(100) NOT NULL,
+  `Date` date NOT NULL,
+  `Time` time NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `phone_num` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `req` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `custbooking`
+--
+
+INSERT INTO `custbooking` (`ID`, `Pax`, `Date`, `Time`, `name`, `phone_num`, `email`, `req`) VALUES
+(4, 1, '2024-07-10', '13:59:00', 'qayyum', '0112012012', 'qayyyumm11@gmail.com', 'baby chair'),
+(5, 1, '2024-07-10', '14:04:00', 'qayyum', '0112012012', 'qayyyumm11@gmail.com', ''),
+(6, 2, '2024-07-31', '14:16:00', 'qayyum', '0112012012', 'wish@gmail.com', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `custinfo`
 --
 
@@ -66,7 +92,7 @@ INSERT INTO `custinfo` (`id`, `name`, `email`, `phone_number`, `password`, `is_a
 (2, 'adam', 'fairusamar@gmail.com', '14141414', 'adam', 0),
 (3, 'adam arif', 'fairusamardaaa@gmail.com', '19471290', 'aaa', 0),
 (5, 'darwish', 'darwish@gmail.com', '01164003924', 'pass1234', 0),
-(6, 'sukiya', 'sukiyaAdmin@gmail.com', '01121003738', 'sukiya', 1);
+(6, 'Sukiya', 'sukiyaAdmin@gmail.com', '01121003738', 'sukiya123', 1);
 
 -- --------------------------------------------------------
 
@@ -87,9 +113,9 @@ CREATE TABLE `feedback` (
 
 INSERT INTO `feedback` (`ID`, `Name`, `Email`, `Feedback`) VALUES
 (1, 'qayyum', 'qayyyumm11@gmail.com', 'halo'),
-(2, 'qayyum', 'qayyyumm11@gmail.com', 'tst'),
 (3, 'a', 'a@gmail.com', 'a'),
-(4, 'wish', 'wish@gmail.com', 'i want more meat ;)');
+(4, 'wish', 'wish@gmail.com', 'i want more meat ;)'),
+(5, 'qayyum', 'a@gmail.com', 'aa');
 
 --
 -- Indexes for dumped tables
@@ -99,6 +125,12 @@ INSERT INTO `feedback` (`ID`, `Name`, `Email`, `Feedback`) VALUES
 -- Indexes for table `admininfo`
 --
 ALTER TABLE `admininfo`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `custbooking`
+--
+ALTER TABLE `custbooking`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -124,6 +156,12 @@ ALTER TABLE `admininfo`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `custbooking`
+--
+ALTER TABLE `custbooking`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `custinfo`
 --
 ALTER TABLE `custinfo`
@@ -133,7 +171,7 @@ ALTER TABLE `custinfo`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
