@@ -3,19 +3,23 @@
 include 'connect.php';
 
 // Check if form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST")  {
     // Retrieve form data
+    $Pax = $_POST['Pax'];
+    $Date = $_POST['Date'];
+    $Time = $_POST['Time'];
     $name = $_POST['Name'];
+    $phone_num = $_POST['Phone'];
     $email = $_POST['Email'];
-    $feedback = $_POST['message'];
+    $req = $_POST['Message'];
 
     // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO feedback (name, email, feedback) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $name, $email, $feedback);
+    $stmt = $conn->prepare("INSERT INTO custbooking (Pax, Date, Time, name, phone_num, email, req) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $Pax, $Date, $Time, $name, $phone_num, $email, $req);
 
     // Execute the query
     if ($stmt->execute()) {
-        echo "Feedback has been submitted";
+        echo '<script>alert("Your booking is successful"); window.location.href = "booking.php";</script>';
     } else {
         echo "Error: " . $stmt->error;
     }

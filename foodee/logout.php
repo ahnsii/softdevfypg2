@@ -1,6 +1,7 @@
 <?php
-require 'connect.php';
-$_SESSION=[];
+session_start();
 session_unset();
 session_destroy();
-header("Location: index.php");
+header("Location: index.php"); // Redirect to the login or home page
+exit();
+?>

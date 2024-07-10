@@ -126,9 +126,9 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
                         <div class="dropdown2">
                           <button onclick="myFunction()" class="dropbtn2">My Account</button>
                           <div id="myDropdown" class="dropdown-content2">
-                            <a href="cust_profile.html" target="_blank">Profile</a> 
-                            <a href="cust_profile.html">Booking History</a>
-                            <a href="#contact">Sign Out</a>
+                            <a href="cust_profile.php" target="_blank">Profile</a> 
+                            <a href="cust_profile.php">Booking History</a>
+                            <a href="logout.php">Sign Out</a>
                           </div>
                         </div>
                         <script src="dropdown2.js"></script>
@@ -469,8 +469,8 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
 						<h2 class="heading to-animate">Book Slot</h2>
-						<p class="sub-heading to-animate">Sign In to your account now to book a dine-in slot at Suki-Ya @ Setapak Central!</p>
-                        <a href="index.php" class="btn btn-primary">Sign In</a> 
+						<p class="sub-heading to-animate">Click here now to book a dine-in slot at Suki-Ya @ Setapak Central!</p>
+                        <a href="booking.php" class="btn btn-primary">Book Slot</a> 
 					</div>
 				</div>
 			</div>

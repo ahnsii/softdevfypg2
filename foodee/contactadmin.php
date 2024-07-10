@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
         <div class="sidebar">
             <ul>
                 <li>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="dashboard.php">
+                    <a href="#">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -49,21 +49,21 @@
                 </li>
                 <li>
                     <a href="adminfeedbck.php">
-<!--                    <section id="#fh5co-contact"></section>-->
+
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
                     <a href="aboutadmin.php">
-<!--                    <section id="#fh5co-about"></section>-->
+
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
-                    <a href="default.php#fh5co-events">
-<!--                    <section id="#fh5co-events"></section>-->
+                    <a href="contactadmin.php">
+
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
