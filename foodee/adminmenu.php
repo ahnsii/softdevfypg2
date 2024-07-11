@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <div class="sidebar">
             <ul>
                 <li>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -42,28 +42,28 @@
                     </a>
                 </li>
                 <li>
-                    <a href="adminmenu.php">
+                    <a href="#">
                         <i class="fas fa-book-open"></i>
                         <div class="title">Menu</div>
                     </a>
                 </li>
                 <li>
                     <a href="adminfeedbck.php">
-
+<!--                    <section id="#fh5co-contact"></section>-->
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
                     <a href="aboutadmin.php">
-
+<!--                    <section id="#fh5co-about"></section>-->
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
                     <a href="contactadmin.php">
-
+<!--                    <section id="#fh5co-events"></section>-->
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
@@ -83,46 +83,13 @@
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
                 </div>
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="doctor1.png" alt="">
-                </div>
+                
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
+                        <div class="number">さようなら</div>
+                        
                     </div>
                 </div>
             </div>
@@ -130,7 +97,7 @@
                 <div class="last-appointments">
                     <div class="heading">
                         <h2>Menu</h2>
-                        <a href="#" class="btn">View All</a>
+                       
                     </div>
                     <table class="visiting">
                         <thead>
@@ -187,112 +154,43 @@
     </div>
             </div>
         
-        <div class="tables">
-                <div class="last-appointments">
-                    <div class="heading">
-                        <h2>Menu</h2>
-                        <a href="#" class="btn">View All</a>
-                    </div>
-                    <table class="visiting">
-                        <thead>
-                            <td>Food</td>
-                            <td>Name</td>
-                            <td>Category</td>
-                            <td>Price</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="img-box-small">
-                                    <img src="vege.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>Carrot</td>
-                                <td>Vegetable</td>
-                                <td>-</td>
-                            </tr>
-                             <tr>
-                                <td>
-                                    <div class="img-box-small">
-                                    <img src="vege.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>Mushroom</td>
-                                <td>Vegetable</td>
-                                <td>-</td>
-                            </tr>
-                          
-                             <tr>
-                                <td>
-                                    <div class="img-box-small">
-                                    <img src="vege.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>Salad</td>
-                                <td>Vegetable</td>
-                                <td>-</td>
-                            </tr>
-                            
-                             <tr>
-                                <td>
-                                    <div class="img-box-small">
-                                    <img src="vege.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>Onion</td>
-                                <td>Vegetable</td>
-                                <td>-</td>
-                            </tr>
-                        </tbody>
-                    </table>
-    </div>
-            </div>
+       
         
         <div class="tables">
                 <div class="last-appointments">
                     <div class="heading">
                         <h2>Menu</h2>
-                        <a href="#" class="btn">View All</a>
+                       
                     </div>
                     <table class="visiting">
                         <thead>
                             <td>Food</td>
                             <td>Name</td>
-                            <td>Category</td>
                             <td>Price</td>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
                                     <div class="img-box-small">
-                                    <img src="beefs.png" alt="">
+                                    <img src="daging.jpeg" alt="">
                                     </div>
                                 </td>
-                                <td>Beef</td>
-                                <td>Meat</td>
+                                <td>Meats</td>
+                                
                                 <td>-</td>
                             </tr>
                              <tr>
                                 <td>
                                     <div class="img-box-small">
-                                    <img src="chic.jpg" alt="">
+                                    <img src="sayur.jpg" alt="">
                                     </div>
                                 </td>
-                                <td>Chicken</td>
-                                <td>Meat</td>
+                                <td>Assorted Veggies</td>
+                            
                                 <td>-</td>
                             </tr>
                           
-                             <tr>
-                                <td>
-                                    <div class="img-box-small">
-                                    <img src="lamb.png" alt="">
-                                    </div>
-                                </td>
-                                <td>Lamb</td>
-                                <td>Meat</td>
-                                <td>-</td>
-                            </tr>
+                           
                             
                             
                         </tbody>
@@ -304,7 +202,7 @@
                 <div class="last-appointments">
                     <div class="heading">
                         <h2>Menu</h2>
-                        <a href="#" class="btn">View All</a>
+                       
                     </div>
                     <table class="visiting">
                         <thead>
@@ -352,9 +250,31 @@
                                     <img src="drinks.jpg" alt="">
                                     </div>
                                 </td>
-                                <td>Pink Guave</td>
+                                <td>Pink Guava</td>
                                 <td>Drink</td>
                                 <td>Rm4.50</td>
+                            </tr>
+                            
+                             <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                    <img src="drinks.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>Oolong Cha</td>
+                                <td>Drink</td>
+                                <td>Rm3.50</td>
+                            </tr>
+                            
+                             <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                    <img src="drinks.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>Green Tea(free flow)</td>
+                                <td>Drink</td>
+                                <td>Rm2.00</td>
                             </tr>
                         </tbody>
                     </table>

@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
 
     // Validate passwords
     if ($new_password !== $confirm_password) {
-        $errors[] = "Passwords do not match.";
+        $errors[] = "Passwords do not match!";
     } else {
         // Retrieve email from session
         $reset_email = $_SESSION["reset_email"];
@@ -78,7 +78,7 @@ if (isset($_POST["submit"])) {
                 <div class="errors">
                     <ul>
                         <?php foreach ($errors as $error) : ?>
-                            <li><?php echo htmlspecialchars($error); ?></li>
+                            <p style="color:red; text-shadow: 1px 0px 0px orange;"><?php echo htmlspecialchars($error); ?></p>
                         <?php endforeach; ?>
                     </ul>
                 </div>

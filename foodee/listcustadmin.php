@@ -2,8 +2,17 @@
 require 'connect.php';
 session_start();
 
+// Check if delete_id is set and delete the corresponding customer
+if (isset($_GET['delete_id'])) {
+    $delete_id = intval($_GET['delete_id']);
+    $delete_query = "DELETE FROM custinfo WHERE id = $delete_id";
+    mysqli_query($conn, $delete_query);
+    header("Location: listcustadmin.php");
+    exit();
+}
+
 // Fetch customer data from the database excluding admin
-$query = "SELECT name, phone_number, email FROM custinfo WHERE is_admin = 0";
+$query = "SELECT id, name, phone_number, email FROM custinfo WHERE is_admin = 0";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -88,39 +97,10 @@ $result = mysqli_query($conn, $query);
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
+                        <div class="number">さようなら</div>
+                        <div class="card-name"></div>
                     </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
+                    
                 </div>
             </div>
             <div class="tables">
@@ -146,9 +126,8 @@ $result = mysqli_query($conn, $query);
                                     echo "<td>" . htmlspecialchars($row['phone_number']) . "</td>";
                                     echo "<td>" . htmlspecialchars($row['email']) . "</td>";
                                     echo "<td>
-                                        <i class='far fa-eye'></i>
-                                        <i class='far fa-edit'></i>
-                                        <i class='far fa-trash-alt'></i>
+                                       
+                                        <a href='listcustadmin.php?delete_id=" . $row['id'] . "'><i class='far fa-trash-alt'></i></a>
                                     </td>";
                                     echo "</tr>";
                                 }

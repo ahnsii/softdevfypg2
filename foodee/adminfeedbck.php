@@ -84,48 +84,19 @@ $result = mysqli_query($conn, $query);
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
                 </div>
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="doctor1.png" alt="">
-                </div>
+               
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
+                        <div class="number">こんにちは </div>
+                        
                     </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
+                 
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                </div>
+           
+             
+               
             </div>
             <div class="tables">
                 <div class="last-appointments">

@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="dashboard.php">
+                    <a href="dashboard.html">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -83,72 +83,58 @@
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
                 </div>
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="doctor1.png" alt="">
-                </div>
+              
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
+                        <div class="number">さようなら</div>
+                        <div class="card-name"></div>
                     </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
+                  
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                </div>
+            
+           
             </div>
             <div class="tables">
                 
                 <div class="doctor-visiting">
                     <div class="heading">
                         <h2>Bookings</h2>
-                        <a href="#" class="btn">View All</a>
+                        
                     </div>
+                    <?php
+                    require 'connect.php'; // Make sure this file correctly connects to your database
+
+                    $query = "SELECT * FROM custbooking";
+                    $result = mysqli_query($conn, $query);
+                    ?>
                     <table class="visiting">
                         <thead>
-                            <td>Table No.</td>
-                            <td>Name</td>
+                            <td>No. Of Pax</td>
+                            <td>Date</td>
                             <td>Visit time</td>
-                            <td>Detail</td>
+                            <td>Name</td>
+                            <td>Phone No.</td>
+                            <td>Special Request</td>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1
-                                </td>
-                                <td>Benjamin</td>
-                                <td>14:00</td>
-                                <td><i class="far fa-eye"></i></td>
-                            </tr>
-                          
+                            <?php
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo "<tr>";
+                                    echo "<td>" . $row['Pax'] . "</td>";
+                                    echo "<td>" . $row['Date'] . "</td>";
+                                    echo "<td>" . $row['Time'] . "</td>";
+                                    echo "<td>" . $row['name'] . "</td>";
+                                    echo "<td>" . $row['phone_num'] . "</td>";
+                                    echo "<td>" . $row['req'] . "</td>";
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='6'>No bookings found</td></tr>";
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>

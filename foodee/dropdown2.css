@@ -30,12 +30,11 @@
 
 .dropdown-content2 a {
   color: black;
-  padding: 4px 5px;
+  padding: 10px 16px;
   text-decoration: none;
-  margin: 10px;
   display: block;
 }
 
-.dropdown2 a:hover {background-color: #ddd;}
+.dropdown-content2 a:hover {background-color: #ddd;}
 
 .show {display: block;}

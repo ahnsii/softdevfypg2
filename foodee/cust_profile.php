@@ -198,11 +198,13 @@ $phone = $phone ?? '';
          font-weight: bold;
          text-transform: uppercase;
          letter-spacing: 1px;
+         font-size: 1.5rem; /* Slightly bigger font size */
      }
      
      .form-group p{
          color: grey;
          padding-left: 64px;
+         font-size: 1.5rem; /* Slightly bigger font size */
      }
 
      .card {
@@ -322,7 +324,7 @@ $phone = $phone ?? '';
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
 					<nav class="fh5co-menu-2">
-                        <div class="header-logo"><img src= "images/Pics%202.png"  width="125px">
+                        <div class="header-logo"><a href="home_cust.php"><img src="images/Pics%202.png" width="125px"></a>
 						<a href="#" data-nav-section="#">My Account</a>
                         <span>|</span>
                         <a href="#" data-nav-section="profile">My Profile</a>
