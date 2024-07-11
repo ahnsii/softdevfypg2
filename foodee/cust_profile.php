@@ -39,26 +39,30 @@ $phone = $phone ?? '';
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Suki-Ya @ Setapak Central Booking System &mdash; Profile</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suki-Ya @ Setapak Central Booking System &mdash; Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO">
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive">
+    <meta name="author" content="FREEHTML5.CO">
 
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-     <!-- Include CSS stylesheets -->
-     <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/icomoon.css">
-<link rel="stylesheet" href="css/simple-line-icons.css">
-<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
 
-
+    <!-- Include Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -468,27 +472,26 @@ $phone = $phone ?? '';
 -->
 
    
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row row-padded">
-				<div class="col-md-12 text-center">
-				    <br><br><br>
-					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
-					</p>
-					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="fh5co-social">
-						<li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-						<li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<div id="fh5co-footer">
+        <div class="container">
+            <div class="row row-padded">
+                <div class="col-md-12 text-center">
+                    <br><br><br><br><br><br>
+                    <p class="to-animate">&copy; 2024 Suki-Ya Booking System. <br> Designed by DCS 6 - 22/24 <br> SBS, Group 02. </p>
+                    <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="fh5co-social">
+                        <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 	
 
 
