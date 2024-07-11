@@ -27,8 +27,9 @@
         <div class="container-fluid">
             <nav class="fh5co-menu-2">
                 <div class="header-logo">
-                    <a href="home_cust.php"><img src="images/Pics%202.png" width="125px"></a>
-                    <a href="booking.php" data-nav-section="#">Book Slot</a>
+                <div class="header-logo"><a href="home_cust.php"><img src="images/Pics%202.png" width="125px"></a></div>
+                <div class="header-menu">
+                    <a href="booking.php">Book Slot</a>
                     <span>|</span>
                     <a href="booksummary.php">Booking Summary</a>
                 </div>

@@ -198,11 +198,13 @@ $phone = $phone ?? '';
          font-weight: bold;
          text-transform: uppercase;
          letter-spacing: 1px;
+         font-size: 1.5rem; /* Slightly bigger font size */
      }
      
      .form-group p{
          color: grey;
          padding-left: 64px;
+         font-size: 1.5rem; /* Slightly bigger font size */
      }
 
      .card {

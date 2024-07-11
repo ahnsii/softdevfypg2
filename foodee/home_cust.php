@@ -231,11 +231,55 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
 						<h2 class="heading to-animate">Food Menu</h2>
-						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						
 					</div>
 				</div>
-				<div class="row row-padded">
-					<div class="col-md-6">
+				<div class="container">
+        
+<!--        <h3 class="title"> Suki-Ya Menu </h3>-->
+        
+        <div class="products-container">
+            
+            <div class="product" data-name=p-1>
+                <img src="shabushabu.jpg" alt="">
+                <h3>Shabu-shabu</h3>
+                <div class="price">しゃぶしゃぶ</div>
+            </div>
+            
+            <div class="product" data-name=p-2>
+                <img src="suki.jpg" alt="">
+                <h3>Sukiyaki</h3>
+                <div class="price">すき焼き</div>
+            </div>
+            
+            <div class="product" data-name=p-3>
+                <img src="miso.jpg" alt="">
+                <h3>Miso Soup</h3>
+                <div class="price">味噌</div>
+            </div>
+            
+            <div class="product" data-name=p-4>
+                <img src="kimu.jpg" alt="">
+                <h3>Kimuchi</h3>
+                <div class="price">キムチ</div>
+            </div>
+            
+            <div class="product" data-name=p-5>
+                <img src="gfx_healthybar.jpg" alt="">
+                <h3>Healthy Bar with Assorted Veges</h3>
+                <div class="price">Free Flow!</div>
+            </div>
+            
+            <div class="product" data-name=p-6>
+                <img src="meat.jpeg" alt="">
+                <h3>Chicken/Beef/Lamb Meat</h3>
+                <div class="price">Free Flow!</div>
+            </div>
+           
+            
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
 						<div class="fh5co-food-menu to-animate-2">
 							<h2 class="fh5co-drinks">Drinks</h2>
 							<ul>
@@ -245,12 +289,12 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Pineapple Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<h3>Orange Juice</h3>
+											
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$17.50
+										RM4.50
 									</div>
 								</li>
 								<li>
@@ -259,12 +303,11 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Green Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<h3>Green Tea (free flow)</h3>
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$7.99
+										RM2.00
 									</div>
 								</li>
 								<li>
@@ -274,11 +317,11 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 										</figure>
 										<div>
 											<h3>Soft Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
+											
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$12.99
+										RM4.50
 									</div>
 								</li>
 								<li>
@@ -287,207 +330,47 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
 											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Carlo Rosee Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<h3>Iced Lemon Tea</h3>
+											
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$12.99
+										RM9.90
 									</div>
 								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Steak</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Beef Steak</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$17.50
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Tomato with Chicken</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$7.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Sausages from Italy</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Beef Grilled</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Drinks</h2>
-							<ul>
-								<li>
+                                <li>
 									<div class="fh5co-food-desc">
 										<figure>
 											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Pineapple Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<h3>Oolong Cha</h3>
+											
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$17.50
+										RM3.50
 									</div>
 								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Green Juice</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$7.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Soft Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-								<li>
+                                <li>
 									<div class="fh5co-food-desc">
 										<figure>
 											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
 										</figure>
 										<div>
-											<h3>Carlo Rosee Drinks</h3>
-											<p>Far far away, behind the word mountains.</p>
+											<h3>Pink Guava</h3>
+											
 										</div>
 									</div>
 									<div class="fh5co-food-pricing">
-										$12.99
+										RM4.50
 									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Steak</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Beef Steak</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$17.50
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Tomato with Chicken</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$7.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Sausages from Italy</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_8.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>Beef Grilled</h3>
-											<p>Far far away, behind the word mountains.</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										$12.99
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+					
+    </div>
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 text-center to-animate-2">
 						<p><a href="#" class="btn btn-primary btn-outline">More Food Menu</a></p>
