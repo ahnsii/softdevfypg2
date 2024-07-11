@@ -12,6 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")  {
     $phone_num = $_POST['Phone'];
     $email = $_POST['Email'];
     $req = $_POST['Message'];
+//store data in session
+    $_SESSION['Pax'] = $Pax;
+    $_SESSION['Date'] = $Date;
+    $_SESSION['Time'] = $Time;
+    $_SESSION['Name'] = $name;
+    $_SESSION['Phone'] = $phone_num;
+    $_SESSION['Email'] = $email;
+    $_SESSION['Message'] = $req;
 
     // Prepare and bind
     $stmt = $conn->prepare("INSERT INTO custbooking (Pax, Date, Time, name, phone_num, email, req) VALUES (?, ?, ?, ?, ?, ?, ?)");

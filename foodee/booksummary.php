@@ -1,4 +1,7 @@
-
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -27,10 +30,10 @@
         <div class="container-fluid">
             <nav class="fh5co-menu-2">
                 <div class="header-logo">
-                    <a href="home_cust.php"><img src="images/Pics%202.png" width="125px"></a>
-                    <a href="booking.php" data-nav-section="#">Book Slot</a>
+                    <img src="images/Pics%202.png" width="125px">
+                    <a href="#" data-nav-section="#">Book Slot</a>
                     <span>|</span>
-                    <a href="booksummary.php">Booking Summary</a>
+                    <a href="#" data-nav-section="profile">Book Slot</a>
                 </div>
             </nav>
         </div>
@@ -41,46 +44,28 @@
     <div class="container">
         <div class="row text-center fh5co-heading row-padded">
             <div class="col-md-8 col-md-offset-2">
-                <h2 class="heading to-animate">Book Slot Form</h2>
-                <p class="sub-heading to-animate">Welcome to our Reservation Page! Book your table in advance and enjoy an exceptional dining experience. We look forward to serving you!</p>
+                <h2 class="heading to-animate">Your Booking Summary</h2>
+                <p class="sub-heading to-animate">Review your booking summary here</p>
             </div>
         </div>
 
-        <form id="bookingForm" action="submit_booking.php" method="post">
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="Pax">No. of Pax</label>
-                    <input id="Pax" name="Pax" class="form-control" placeholder="No. of Pax" type="number" min="1" max="10" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="Date">Select Date</label>
-                    <input id="Date" name="Date" class="form-control" placeholder="Select Date" type="date" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="Time">Select Time</label>
-                    <input id="Time" name="Time" class="form-control" placeholder="Select Time" type="time" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="Name">Name</label>
-                    <input id="Name" name="Name" class="form-control" placeholder="Name" type="text" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="Phone">Phone No.</label>
-                    <input id="Phone" name="Phone" class="form-control" placeholder="+60-XXX XXXX" type="text" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="Email">Email</label>
-                    <input id="Email" name="Email" class="form-control" placeholder="Email" type="email" required>
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="Message">Special Request</label>
-                    <textarea id="Message" name="Message" cols="30" rows="5" class="form-control" placeholder="Write your request here (if any)"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                    <input class="btn btn-primary" value="Book Slot" type="submit">
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+            <?php
+                if (isset($_SESSION['Name'])) {
+                    echo "<p><strong>No. of Pax:</strong> " . htmlspecialchars($_SESSION['Pax']) . "</p>";
+                    echo "<p><strong>Date:</strong> " . htmlspecialchars($_SESSION['Date']) . "</p>";
+                    echo "<p><strong>Time:</strong> " . htmlspecialchars($_SESSION['Time']) . "</p>";
+                    echo "<p><strong>Name:</strong> " . htmlspecialchars($_SESSION['Name']) . "</p>";
+                    echo "<p><strong>Phone No.:</strong> " . htmlspecialchars($_SESSION['Phone']) . "</p>";
+                    echo "<p><strong>Email:</strong> " . htmlspecialchars($_SESSION['Email']) . "</p>";
+                    echo "<p><strong>Special Request:</strong> " . htmlspecialchars($_SESSION['Message']) . "</p>";
+                } else {
+                    echo "<p>No booking information available.</p>";
+                }
+                ?>
             </div>
-        </form>
+        </div>
 
     </div>
 </div>

@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="default.php#fh5co-about">
+                    <a href="foodee/default.php#fh5co-about">
 <!--                    <section id="#fh5co-about"></section>-->
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
@@ -69,7 +69,7 @@
                     </a>
                 </li>
                  <li>
-                    <a href="index.php">
+                    <a href="index  .php">
                         <i class="fas fa-sign-out-alt"></i>
                         <div class="title">Sign Out</div>
                     </a>
@@ -83,47 +83,15 @@
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
                 </div>
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="doctor1.png" alt="">
-                </div>
+              
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
+                        <div class="number">こんにちは</div>
+                     
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
+                
                 </div>
             </div>
             <div class="tables">

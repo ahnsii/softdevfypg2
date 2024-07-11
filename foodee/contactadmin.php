@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <div class="sidebar">
             <ul>
                 <li>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="dashboard.php">
                         <i class="fas fa-th-large"></i>
                         <div class="title">Profile</div>
                     </a>
@@ -49,21 +49,21 @@
                 </li>
                 <li>
                     <a href="adminfeedbck.php">
-
+<!--                    <section id="#fh5co-contact"></section>-->
                         <i class="fab fa-wpforms"></i>
                         <div class="title">Feedback Form</div>
                     </a>
                 </li>
                 <li>
                     <a href="aboutadmin.php">
-
+<!--                    <section id="#fh5co-about"></section>-->
                         <i class="fas fa-hands"></i>
                         <div class="title">About Us</div>
                     </a>
                 </li>
                 <li>
-                    <a href="contactadmin.php">
-
+                    <a href="foodee/default.php#fh5co-events">
+<!--                    <section id="#fh5co-events"></section>-->
                         <i class="fas fa-address-book"></i>
                         <div class="title">Contact Us</div>
                     </a>
@@ -83,68 +83,96 @@
                     <input type="text" name="search" placeholder="search here">
                     <label for="search"><i class="fas fa-search"></i></label>
                 </div>
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="doctor1.png" alt="">
-                </div>
+               
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <div class="number">3</div>
-                        <div class="card-name">New Bookings</div>
+                        <div class="number">さようなら</div>
+                        <div class="card-name"></div>
                     </div>
-                    <div class="icon-box">
-                        <i class="fas fa-table"></i>
-                    </div>
+                   
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">13</div>
-                        <div class="card-name">New Customer</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">8</div>
-                        <div class="card-name">Operations</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">$4500</div>
-                        <div class="card-name">Earnings</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                </div>
+               
             </div>
-            <div class="tables">
-            
-                
-                 <div class="doctor-visiting">
+         
+               <div class="tables">
+                <div class="last-appointments">
                     <div class="heading">
                         <h2>Contact Us</h2>
-                       
+                        
                     </div>
                     <table class="visiting">
-                        
+                        <thead>
+                            <td>Restaurant's Address</td>
+                            
+                        </thead>
                         <tbody>
-                           
+                            <tr>
+                                <td>
+                                    <p>Lot No G-15 & AG-15, Ground Floor, Setapak Sentral, </p>
+                                    <p>No 67, Jalan Taman Ibu Kota, Taman Danau Kota,</p> 
+                                           <p>Setapak,53300 Kuala Lumpur.</p>
+                                </td>
+                                
+                            </tr>
+                             
+                          
+                            
+                            
+                        </tbody>
+                        
+                         <thead>
+                            <td>Place's Phone Number</td>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>+603-8855 8379</p>
+                                    
+                                </td>
+                                
+                            </tr>
+                             
+                          
+                            
+                            
+                        </tbody>
+                        
+                         <thead>
+                            <td>E-mail</td>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>info@suki-ya.com</p>
+                                    
+                                </td>
+                                
+                            </tr>
+   
+                        </tbody>
+                        
+                         <thead>
+                            <td>Website</td>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p> Suki-Ya Official Website</p>
+                                    
+                                </td>
+                                
+                            </tr>
                         </tbody>
                     </table>
-                </div>
+    </div>
             </div>
         </div>
     </div>
-    
     
 </body>
 

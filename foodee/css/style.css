@@ -65,7 +65,9 @@ p {
 .btn-primary {
   background: #cd0a15;
   color: #fff;
-  border: 2px solid #cd0a15;
+  border: 1px solid #cd0a15;
+  padding: 8px 16px;
+  font-size: 14px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #cd0a15 !important;
@@ -74,7 +76,9 @@ p {
 .btn-primary.btn-outline {
   background: transparent;
   color: #cd0a15;
-  border: 2px solid #cd0a15;
+  border: 1px solid #cd0a15;
+  padding: 8px 16px;
+  font-size: 14px;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #cd0a15;
