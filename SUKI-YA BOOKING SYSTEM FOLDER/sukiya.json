@@ -1,0 +1,30 @@
+[
+{"type":"header","version":"4.7.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"sukiya"},
+{"type":"table","name":"custbooking","database":"sukiya","data":
+[
+{"ID":"4","Pax":"1","Date":"2024-07-10","Time":"13:59:00","name":"qayyum","phone_num":"0112012012","email":"qayyyumm11@gmail.com","req":"baby chair"},
+{"ID":"5","Pax":"1","Date":"2024-07-10","Time":"14:04:00","name":"qayyum","phone_num":"0112012012","email":"qayyyumm11@gmail.com","req":""},
+{"ID":"6","Pax":"2","Date":"2024-07-31","Time":"14:16:00","name":"qayyum","phone_num":"0112012012","email":"wish@gmail.com","req":""},
+{"ID":"7","Pax":"2","Date":"2024-07-11","Time":"22:09:00","name":"wish","phone_num":"0112012523","email":"wish@gmail.com","req":""},
+{"ID":"9","Pax":"1","Date":"2024-07-11","Time":"22:51:00","name":"test","phone_num":"0112012012","email":"qayyyumm11@gmail.com","req":"test"},
+{"ID":"10","Pax":"1","Date":"2024-07-10","Time":"22:53:00","name":"test2","phone_num":"0112012012","email":"qayyyumm11@gmail.com","req":"test2"}
+]
+}
+,{"type":"table","name":"custinfo","database":"sukiya","data":
+[
+{"id":"1","name":"Muhammad Qayyum","email":"qayyyumm11@gmail.com","phone_number":"12345678","password":"abc","is_admin":"0"},
+{"id":"2","name":"adam","email":"fairusamar@gmail.com","phone_number":"14141414","password":"adam","is_admin":"0"},
+{"id":"5","name":"darwish","email":"darwish@gmail.com","phone_number":"011239087","password":"123","is_admin":"0"},
+{"id":"6","name":"Sukiya","email":"sukiyaAdmin@gmail.com","phone_number":"01121003738","password":"sukiya123","is_admin":"1"}
+]
+}
+,{"type":"table","name":"feedback","database":"sukiya","data":
+[
+{"ID":"1","Name":"qayyum","Email":"qayyyumm11@gmail.com","Feedback":"halo"},
+{"ID":"3","Name":"a","Email":"a@gmail.com","Feedback":"a"},
+{"ID":"4","Name":"wish","Email":"wish@gmail.com","Feedback":"i want more meat ;)"},
+{"ID":"5","Name":"qayyum","Email":"a@gmail.com","Feedback":"aa"}
+]
+}
+]

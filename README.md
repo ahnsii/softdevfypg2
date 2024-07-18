@@ -1,6 +1,6 @@
 # softdevfypg2 #
 
-##TITLE : SUKI-YA BOOKING SYSTEM##
+**TITLE : SUKI-YA BOOKING SYSTEM**
 
 
 *****INSTALLATION & USAGE MANUAL*****
@@ -31,10 +31,15 @@ link -> https://github.com/ahnsii/softdevfypg2.git
 
 *****USERNAMES & PASSWORD*****
 
-Customer Login:
-email -> qayyyumm11@gmail.com
-password -> abc
+Customers Login:
+a) email -> qayyyumm11@gmail.com
+   password -> abc
 
+b) email -> fairusamar@gmail.com
+   password -> adam
+
+c) email -> darwish@gmail.com
+   password -> 123
 
 Admin Login:
 email -> sukiyaAdmin@gmail.com
